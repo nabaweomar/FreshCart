@@ -41,7 +41,7 @@ function App() {
         { path: 'forgotpassword', element: <ForgetPassword /> },
         { path: 'signin', element: <Signin /> },
         { path: 'signup', element: <Signup /> },
-        { path: 'FreshCart', element: <Signup /> },
+        { path: 'FreshCart', element: <Signin /> },
         { path: '*', element: <Notfound /> },
       ]
     }
