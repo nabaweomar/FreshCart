@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+nav .navbar-nav li .active {
+  color: white !important;
+  background-color: rgb(13, 173, 13);
+  border-radius: 5px;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+.bg-subMain {
+  background-color: #f0f0f0;
+}
+
+.text-main {
+  color: green;
+}
+
+.bg-main {
+  background-color: green !important;
+}
+
+.login-img img {
+  width: 90%
+}
+
+.form-control:focus {
+  border-color: #6ae730 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* ========> Products Styles <======= */
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 5px var(--main-color);
+  border-radius: 5px;
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.product .discount {
+  height: 40px;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+}
+
+.detailsWish {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0aad0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0
+}
+.detailsWish i{
+  font-size: 22px;
+}
+.cartIcon span {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(185, 70, 24);
+  position: absolute;
+  top: -13px;
+  right:6px;
+  border-radius: 5px;
+}
+.logoutBtn:hover{
+text-decoration: underline;
+}
+.slick-arrow{
+  visibility: hidden;
+}
+.dropDown{
+  padding: 15px;
+  width: 190px;
+  top: 40px;
+  right: -40px;
+  z-index: 99;
+}
+.dropDown li{
+  text-align: center;
+}
+.layout{
+  min-height: 100vh;
+}
+.errSpan{
+  height: 50px;
+  width: 50px;
+  border: solid 4px rgb(151, 76, 14);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Brwn{
+  color: brown;
+}
+.notFound h3{
+  color: rgb(146, 68, 23);
+}
+/* Footer */
+footer{
+  background-color:#1C1C1C;
+}
+footer p{
+  font-size: 13px;
+  color: RGB(116, 129, 130);
+  margin: 0;
+}
+.topPage{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.topPage span{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0aad0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  transition: background-color .5s;
+}
+.topPage:hover span{
+  background-color: #066b06;
+}
+
+/*Media Responsive */
+@media only screen and (max-width:768px) {
+nav  .logoutList{
+    flex-wrap: nowrap!important;
+  }
+
+
+}
